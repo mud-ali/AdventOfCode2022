@@ -1,5 +1,5 @@
 def main():
-    with open('inputOne.txt', 'r') as file:
+    with open('input.txt', 'r') as file:
         elves = file.read().split('\n\n')
         mostCals = 0
         for elf in elves:
