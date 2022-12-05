@@ -7,8 +7,7 @@ def main():
         instructions = file.readlines()
         for cmd in instructions:
             cmdF = list(map(int, cmd.replace("move ",'').replace('\n','').replace(" from ",',').replace(" to ",",").split(",")))
-            # print(s,cmdF[1]-1)
-            # print(cmdF[2]-1)
+
             for i in range(cmdF[0]):
                 s[cmdF[2]-1].append(s[cmdF[1]-1].pop())
     top = ''
